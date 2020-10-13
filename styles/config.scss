@@ -1,3 +1,23 @@
 // Hér eiga að vera stillingar með scss breytum fyrir:
 // grid, max-width á síðu, transitions,
 // liti, margin-bottom gildi sem eru sameiginleg
+
+$max-width: 1400px;
+$gutter: 20px;
+$margin-bottom: 2rem;
+
+$hvitur: #eee;
+$dokkhvitur: #ccc;
+$grar: #999;
+$dokkgrar: #222;
+$svartur: #000;
+$bleikur: rgb(212, 80, 224);
+
+@mixin fade($background-color: transparent, $color: transparent) {
+  background-color: $background-color;
+  color: $color;
+  transition:
+    color 300ms ease-in-out,
+    background-color 300ms ease-in-out,
+    transform 300ms ease-in-out;
+}
